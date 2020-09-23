@@ -57,7 +57,7 @@ class Song
     song = self.new
     split_filename = filename.chomp(".mp3")
     song.save
-    song 
+    song
   end
 
   def self.destroy_all
