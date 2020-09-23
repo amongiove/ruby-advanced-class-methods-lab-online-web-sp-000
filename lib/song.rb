@@ -50,6 +50,7 @@ class Song
       splie_filename = filename.chomp(".mp3").split(" - ")
       song.name = split_filename[1]
       song.name = split_filename[0]
+      song
   end
 
   def self.destroy_all
