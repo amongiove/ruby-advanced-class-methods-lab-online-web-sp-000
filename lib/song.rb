@@ -30,8 +30,11 @@ class Song
 
   def self.find_by_name(name)
     @@all.detect {|song| song.name == "#{name}"}
-
   end
+
+  def slef.find_or_create_by_name(name)
+    song.find_by_name
+    song.create_by_name
 
   def self.destroy_all
     @@all.clear()
