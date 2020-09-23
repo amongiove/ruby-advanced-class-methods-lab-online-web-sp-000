@@ -45,8 +45,9 @@ class Song
     #self.all.sory_by(&:name)
   end
 
-  def self.new_from_filename
-    
+  def self.new_from_filename(filename)
+      song = self.new
+      splie_filename = filename.chomp(".mp3").split(" - ")
   end
 
   def self.destroy_all
