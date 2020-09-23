@@ -45,6 +45,10 @@ class Song
     #self.all.sory_by(&:name)
   end
 
+  def self.new_from_filename
+    
+  end
+
   def self.destroy_all
     @@all.clear()
   end
