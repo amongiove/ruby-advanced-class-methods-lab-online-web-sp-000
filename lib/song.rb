@@ -56,7 +56,7 @@ class Song
   def self.create_from_filename(filename)
     song = self.new
     split_filename = filename.chomp(".mp3")
-    song.save
+    split_filename.save
     song
   end
 
